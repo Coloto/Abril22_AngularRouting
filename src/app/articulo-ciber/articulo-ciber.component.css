@@ -1,0 +1,15 @@
+#contenedor{
+    margin-top: 35px;
+    display: flex;
+    margin-left: 8%;
+    /* justify-content: center; */
+}
+
+#contenido{
+    width: 50%;
+}
+
+legend{
+    font-size: 30px;
+    margin-bottom: 10px;
+}

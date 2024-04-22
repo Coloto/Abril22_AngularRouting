@@ -1,0 +1,28 @@
+.general{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#contenedor{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    width: 18%;
+    border-radius: 15px;
+    /* height: 200%; */
+}
+
+button{
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 15px;
+    border: 1px solid;
+}
+
+button:hover{
+    background-color: #A4A4A4;
+    cursor: pointer;
+}

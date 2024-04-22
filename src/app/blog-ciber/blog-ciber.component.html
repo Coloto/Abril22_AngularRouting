@@ -1,0 +1,12 @@
+<div class="general">
+    @for (articulo of articulos; track articulo.id) {
+        <div id="contenedor">
+            <p>{{articulo.titulo}}</p>
+            <p>{{articulo.descripcion}}</p>
+            <button [routerLink]="['/articulo-ciber',articulo.id]">Ver más</button>
+        </div>
+    }
+</div>
+
+
+<router-outlet></router-outlet>

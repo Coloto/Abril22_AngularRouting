@@ -1,0 +1,10 @@
+
+<div id="inmuebles">
+  @for(elemento of articulos; track elemento.id){
+    <a [routerLink]="['/articulo',elemento.id]"><img src={{elemento.ruta}} alt="" class="imagen"></a>
+  }@empty {
+    <p>No hay artículos para mostrar</p>
+  }
+</div>
+
+<router-outlet></router-outlet>
