@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
+import { Inmueble } from '../_modelo/inmueble';
+import { InmuebleService } from '../_servicio/inmueble.service';
 
 @Component({
   selector: 'app-blog',
@@ -9,9 +11,6 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   styleUrl: './blog.component.css'
 })
 export class BlogComponent {
-  articulos= [
-    {id:'0',ruta:'../../assets/picasso_1.jpg'},
-    {id:'1',ruta:'../../assets/segovia_2.jpg'},
-    {id:'2',ruta:'../../assets/zamora_3.jpg'}
-  ];
+  constructor(private inmuebleService: InmuebleService){}
+  inmuebles: Inmueble[]=this.inmuebleService.obtenerArray();
 }
